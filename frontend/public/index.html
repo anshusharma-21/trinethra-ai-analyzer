@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Trinethra Module — Supervisor Feedback Analyzer"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Tailwind CDN: Direct internet se load hoga -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Theme Colors: Nude Pink aur Glassmorphism ke liye -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              nudePink: '#fdf0f0',
+              deepNude: '#d4a5a5',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Glassmorphism effect ke liye custom utility */
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+    </style>
+
+    <title>Trinethra Analyzer | DeepThought</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
